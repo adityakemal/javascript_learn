@@ -16,4 +16,13 @@
     var render = document.getElementById('hasil')
 
     return message ? render.innerHTML = message : console.log(message);
+
   }
+
+// calling id/class with jquery
+// $(document).ready(()=>{
+    $('#toup').click(()=>{
+      let x = $('#hasil').toggle()
+      console.log(x);
+    })
+// })
