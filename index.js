@@ -14,6 +14,6 @@
     var message = s ? `no anda ${s}` : alert("masukan angka")
 
     var render = document.getElementById('hasil')
-    
-    return message ? render.innerHTML = message : "no"
+
+    return message ? render.innerHTML = message : console.log(message);
   }
