@@ -1,4 +1,4 @@
-.op{
+.op {
   /* display: inline-block; */
   background-color: orange;
   color: white;
@@ -6,10 +6,9 @@
   font-size: 20px;
   height: 100px;
   width: 100px;
-
 }
 
-.key{
+.key {
   /* display: inline-block; */
   background-color: maroon;
   color: white;
@@ -18,19 +17,20 @@
   height: 100px;
   width: 100px;
 }
-p{
+
+p {
   float: right;
   overflow: auto;
   width: 390px;
 }
-.frame{
+
+.frame {
   font-size: 50px;
-  color:white;
+  color: white;
   padding: 10px;
   width: 390px;
-  margin:6px 0px;
+  margin: 6px 0px;
   background-color: grey;
   height: 100px;
   overflow: scroll;
-
 }
