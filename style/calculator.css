@@ -1,0 +1,35 @@
+.op{
+  /* display: inline-block; */
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  height: 100px;
+  width: 100px;
+
+}
+
+.key{
+  /* display: inline-block; */
+  background-color: maroon;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  height: 100px;
+  width: 100px;
+}
+p{
+  float: right;
+
+}
+.frame{
+  font-size: 50px;
+  color:white;
+  padding: 10px;
+  width: 390px;
+  margin:6px 0px;
+  background-color: grey;
+  height: 100px;
+  overflow: scroll;
+
+}
