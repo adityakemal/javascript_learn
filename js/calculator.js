@@ -19,13 +19,24 @@ function disableAngka() {
 function enableAngka() {
   return $(idAngkas).prop("disabled", false)
 }
+// currency function
+var currencyFun = cur =>{
+    return "Rp. "+cur.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+}
+console.log(currencyFun(12345432))
 
 // FUNTION INPUT NUMBER
 function inputAngka(val) {
   return $(val).click(() => {
     let s = $(val).val()
     $('#hasil').append(s)
+    // current call version
+    let t = $('#hasil').text()
+    let c = currencyFun(parseFloat(eval(t)))
+    $('#currency').replaceWith(`<span id="currency">${c}</span>`)
+
     console.log(s);
+    console.log(c);
     enableOps()
   })
 }
@@ -58,6 +69,8 @@ operator("#kurang")
 operator("#bagi")
 operator("#kali")
 
+
+
 // jumlah total
 $('#equal').click(() => {
   var x = $('#hasil').text()
@@ -65,6 +78,9 @@ $('#equal').click(() => {
   // console.log(parseFloat(eval(x)));
   var tot = parseFloat(eval(x))
   $('#hasil').replaceWith(`<p id="hasil">${tot}</p>`)
+  // currency hasil
+  let c = currencyFun(tot)
+  $('#currency').replaceWith(`<span id="currency">${c}</span>`)
   // prop set disabled
   enableOps();
   disableAngka()

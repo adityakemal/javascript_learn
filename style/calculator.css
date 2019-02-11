@@ -19,18 +19,18 @@
 }
 
 p {
-  float: right;
   overflow: auto;
   width: 390px;
+  padding: 10px;
+  margin: 0;
+  min-height: 100px;
+  font-size: 50px;
+  background-color: grey;
 }
 
-.frame {
-  font-size: 50px;
-  color: white;
-  padding: 10px;
+/* .frame {
   width: 390px;
-  margin: 6px 0px;
+  color: white;
   background-color: grey;
-  height: 100px;
   overflow: scroll;
-}
+} */
