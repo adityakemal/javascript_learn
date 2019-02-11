@@ -1,14 +1,19 @@
+// FUNCTION ENABLE/DISABLE OPERATOR
+var idOps = "#tambah,#kurang,#bagi,#kali,#equal"
 function enableOps(){
-  return $("#tambah,#kurang,#bagi,#kali,#equal").prop("disabled",false)
+  return $(idOps).prop("disabled",false)
 }
 function disableOps(){
-  return $("#tambah,#kurang,#bagi,#kali,#equal").prop("disabled",true)
+  return $(idOps).prop("disabled",true)
 }
+
+// FUNCTION ENABLE/DISABLE ANGKA
+var idAngkas = "#satu,#dua,#tiga,#empat,#lima,#enam,#tujuh,#delapan,#sembilan,#nol"
 function disableAngka(){
-  return $("#satu,#dua,#tiga,#empat,#lima,#enam,#tujuh,#delapan,#sembilan,#nol").prop("disabled",true)
+  return $(idAngkas).prop("disabled",true)
 }
 function enableAngka(){
-  return $("#satu,#dua,#tiga,#empat,#lima,#enam,#tujuh,#delapan,#sembilan,#nol").prop("disabled",false)
+  return $(idAngkas).prop("disabled",false)
 }
 
 // FUNTION INPUT NUMBER
@@ -32,8 +37,6 @@ inputAngka("#delapan")
 inputAngka("#sembilan")
 inputAngka("#nol")
 
-
-
 // FUNCTION OPERATOR
 function operator(op) {
   return $(op).click(()=>{
@@ -50,9 +53,6 @@ operator("#tambah")
 operator("#kurang")
 operator("#bagi")
 operator("#kali")
-
-
-
 
 // jumlah total
 $('#equal').click(()=>{

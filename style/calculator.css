@@ -20,7 +20,8 @@
 }
 p{
   float: right;
-
+  overflow: auto;
+  width: 390px;
 }
 .frame{
   font-size: 50px;
