@@ -6,11 +6,12 @@ function panggilObject() {
     harga: 500000000,
     deskripsi: function() {
       return `namanya adalah ${mobil.nama} typenya adalah ${mobil.type} harganya yaitu ${mobil.harga} thanks!!`
-    }
+    },
+    tahun : [2001,2002,2003,2005]
   }
   // ini cara push ke objek
-  mobil.tahun = 202020202
-  //console.log(mobil);
+  // mobil.tahun = 202020202
+  console.table(mobil.tahun[2]);
 }
 panggilObject()
 
