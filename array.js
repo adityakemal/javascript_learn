@@ -4,6 +4,6 @@ function panggilArray() {
 
   console.log(arrNum.length);
   console.log(arrNama.length);
-  console.log(arrNama[2]);
+  console.log(arrNama[1]);
 }
 panggilArray()
