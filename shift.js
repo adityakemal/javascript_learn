@@ -1,4 +1,5 @@
 //shift spperti mengambil isi dalam array dan di tampung di shift itu sendiri sehingga dalam array akan berkurang 1, unshift() sebaliknya bisa menambah pada array
+//shift dan unshift keduanya mengeksekusi dari awal array
 function panggilShift() {
   var kota = ['bandung','garut','jakarta','cirebon','jogja']
   //console.log(kota);
