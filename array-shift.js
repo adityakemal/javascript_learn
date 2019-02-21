@@ -3,21 +3,15 @@
 function panggilShift() {
   var kota = ['bandung','garut','jakarta','cirebon','jogja']
   //console.log(kota);
-  console.log('========================');
-
+  console.log('-------------');
+    var yangDihapus = []
    for (var i = 0; i < 3; i++) {
      k = kota.shift()
+     yangDihapus.push(k)
      console.log(k);
    }
+   console.log('ini yg di hapus bray====', yangDihapus);
+
   return kota
 }
 console.log(panggilShift());
-
-function panggilUnshift() {
-  var arr = ["aaa"]
-  arr.unshift('xxx')
-  arr.unshift('yyy')
-  arr.unshift('zzz')
-return arr
-}
-console.log(panggilUnshift());
