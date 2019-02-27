@@ -1,3 +1,4 @@
+//eksekusi dari depan
 function panggilUnshift() {
   var arr = ["jakarta","garut"]
   arr.unshift('xxx')
