@@ -16,3 +16,8 @@ fil("cing")
 
 //example filter
 // console.log(dataHewan.filter(x => x.length>5));
+
+var y = dataHewan.filter(function (data) {
+  console.log(data+ "mm");
+})
+// console.log(y);
