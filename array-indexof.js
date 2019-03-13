@@ -10,4 +10,4 @@ function arrayIndexOf(val) {
   }
 }
 
-arrayIndexOf("ba")
+arrayIndexOf("sulsel")
