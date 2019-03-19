@@ -13,7 +13,7 @@ console.log(perFe); //hasil akan undefined
 var perMap = arr.map((fm , index, array)=>{
   // console.log(index);
   // console.log(array);
-  return fm + ' kota'
+  return fm + ' kota' + index
 
 })
 
