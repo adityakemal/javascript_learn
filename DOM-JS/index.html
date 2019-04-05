@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <input class="nama" id="firstname" type="text" name="" value="Kemal">
+  <input class="nama" id="lastname" type="text" name="" value="Aditya">
+
+  <button type="button" onclick="jalan()" name="button">jalan</button>
+
+</body>
+
+<script type="text/javascript">
+  var jalan = ()=>{
+    //alert('jalan jalan ke kota tua')
+    //alert dan log tidak bisa barengan
+    console.log('jalan ke kota lama')
+    console.log(document.getElementById('firstname').value)
+    console.log(document.getElementById('lastname').value)
+    // kalo class harus get elements pake S terus nanti akan terlihat ada berapa id yg memakai class tersebut berbentuk object dan bisa di lanjutkan untuk mengambil valuenya
+    console.log(document.getElementsByClassName('nama'))
+    // bisa juga dengan tag name
+    console.log(document.getElementsByTagName('input'))
+    // bisa dengan querySelector
+    console.log('ini q selector: ',document.querySelector('.nama'))
+
+  }
+</script>
+
+</html>
