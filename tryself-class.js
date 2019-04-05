@@ -20,7 +20,7 @@ Animal.handler = "tom"
 
 var angsa = new Animal('angsa','unggas')
 
-console.log(angsa)
+console.log(angsa.info)
 console.log(Animal.handler)
 
 //extend animal artinya bisa mengambil objek constructo di class animal dengan cara super()
